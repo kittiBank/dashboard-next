@@ -16,6 +16,9 @@ const iconMap = {
 
 export default async function CardWrapper() {
   //Add deley for mock fecth data for suspense skeleton loading
+  console.log("Start Card delay 1 seconds...");
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  console.log("Delay finished. Now fetching Card data...");
 
   const {
     numberOfInvoices,
